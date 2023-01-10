@@ -16,7 +16,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     sourceMapFilename: "[file].map",
     chunkFilename: "[id].chunk.js",
-    assetModuleFilename: "./assets/[name].[ext]",
+    assetModuleFilename: "./assets/[name][ext]",
   },
   optimization: {
     splitChunks: {
@@ -41,7 +41,7 @@ module.exports = {
       },
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].[hash].css",
+      filename: "style.[hash].css",
     }),
   ],
   module: {

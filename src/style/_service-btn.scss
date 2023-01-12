@@ -1,0 +1,103 @@
+$icon-color: #ff3e79;
+
+%hover-after-shared {
+  box-shadow: 2px 1px 5px 1px rgba(69, 79, 126, 0.3);
+  transform: scale(1.1);
+  background-color: $icon-color;
+}
+
+.service-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $icon-color;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 2px 1px 5px 1px rgba(69, 79, 126, 0.3);
+    transform: scale(1.1);
+    background-color: $icon-color;
+  }
+
+  &--menu {
+    background-image: url(../img/burger.svg);
+  }
+
+  &--request {
+    background-image: url(../img/repair.svg);
+  }
+
+  &--condition {
+    background-image: url(../img/checkstatus.svg);
+  }
+
+  &--call {
+    background-image: url(../img/call.svg);
+  }
+
+  &--chat {
+    background-image: url(../img/chat.svg);
+  }
+
+  &--profile {
+    background-image: url(../img/profile.svg);
+  }
+
+  &--search {
+    background-image: url(../img/search.svg);
+  }
+
+  &--close {
+    background-image: url(../img/close.svg);
+  }
+
+  &--monitor {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1b1c21;
+    text-align: start;
+    width: 173px;
+    border-radius: 0;
+    background-color: #f8f8f8;
+
+    &--monitor:hover {
+      box-shadow: none;
+      transform: none;
+      background-color: inherit;
+      @extend %hover-after-shared;
+    }
+
+    &--monitor::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: $icon-color;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all 0.3s ease-in-out;
+      @extend %hover-after-shared;
+    }
+  }
+
+  &--monitor-request {
+    &::after {
+      background-image: url(../img/repair.svg);
+    }
+    &--monitor-condition {
+      &::after {
+        background-image: url(../img/checkstatus.svg);
+      }
+    }
+  }
+}

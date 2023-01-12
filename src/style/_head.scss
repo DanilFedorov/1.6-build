@@ -1,0 +1,99 @@
+.head {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 24px 16px 0 16px;
+
+    @media (min-width: 768px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 42px 32px 0 32px;
+      justify-content: space-between;
+    }
+
+    &--nav {
+      background-color: #fff;
+      border-bottom: 1px solid #d9fff5;
+      height: 88px;
+      padding-top: 0;
+
+      @media (min-width: 1200px) {
+        display: none;
+      }
+    }
+    &--divider {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: -22px;
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  &__logo {
+    position: relative;
+    margin-left: 16px;
+
+    @media (min-width: 768px) {
+      margin-left: 42px;
+    }
+
+    &--divider {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 13px;
+        left: -20px;
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+  }
+
+  &__page-nav {
+    padding: 24px 16px 0 16px;
+
+    @media (min-width: 768px) and (max-width: 1199.99px) {
+      padding-top: 32px;
+      padding-left: 24px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 8px;
+      padding-left: 32px;
+    }
+  }
+
+  &__btn-list {
+    flex-grow: 1;
+    justify-content: flex-end;
+
+    @media (min-width: 768px) {
+      flex-grow: 0;
+      margin-left: 42px;
+    }
+
+    @media (min-width: 768px) {
+      flex-grow: 1;
+    }
+  }
+}

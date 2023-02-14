@@ -23,6 +23,6 @@ function swiperCard() {
   }
 }
 swiperCard()
-/*window.addEventListener('resize', swiperCard)*/
+window.addEventListener('resize', swiperCard)
 
 export default '*'

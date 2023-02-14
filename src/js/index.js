@@ -1,4 +1,5 @@
 import '../style/style.scss'
-import './swiper.js'
 
-//import './brands.js'
+import './swiper.js'
+import './menu.js'
+/*import './brands.js'*/

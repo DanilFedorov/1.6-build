@@ -6,7 +6,7 @@ function swiperCard() {
   if (window.innerWidth <= 768) {
     if (!init) {
       init = true
-      swiper = new Swiper('.swiper', {
+      let swiper = new Swiper('.swiper', {
         modules: [Pagination],
         spaceBetween: 16,
         width: 240,
@@ -23,6 +23,6 @@ function swiperCard() {
   }
 }
 swiperCard()
-window.addEventListener('resize', swiperCard)
+/*window.addEventListener('resize', swiperCard)*/
 
 export default '*'

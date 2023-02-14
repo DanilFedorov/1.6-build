@@ -1,5 +1,5 @@
 const brandsList = document.querySelector('.brands__list')
-const buttonExpand = document.getElementById('brands__expand')
+const buttonExpand = document.getElementById('brands--expand')
 
 buttonExpand.addEventListener('click', function () {
   if (brandsList.classList.contains('brands__list--visible')) {

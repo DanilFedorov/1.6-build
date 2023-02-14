@@ -1,35 +1,66 @@
 $icon-color: #ff3e79;
 
-%hover-after-shared {
-  box-shadow: 2px 1px 5px 1px rgba(69, 79, 126, 0.3);
-  transform: scale(1.1);
+%icon-share {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease-in-out;
   background-color: $icon-color;
+}
+
+%scree-icon-share {
+  position: absolute;
+  content: '';
+  top: 0px;
+  right: 0px;
+}
+
+%hover {
+  box-shadow: none;
+  background-color: inherit;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+%divider {
+  position: absolute;
+  content: '';
+  top: 4px;
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  border-radius: 1px;
 }
 
 .service-btn {
   border: none;
   outline: none;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: $icon-color;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: 2px 1px 5px 1px rgba(69, 79, 126, 0.3);
-    transform: scale(1.1);
-    background-color: $icon-color;
-  }
+  @extend %icon-share;
 
   &--menu {
     background-image: url(../img/burger.svg);
+
+    &::after {
+      @extend %divider;
+      top: 28px;
+      left: 84px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &--request {
     background-image: url(../img/repair.svg);
+
+    &::before {
+      @extend %divider;
+      left: -20px;
+    }
   }
 
   &--condition {
@@ -56,8 +87,7 @@ $icon-color: #ff3e79;
     background-image: url(../img/close.svg);
   }
 
-  &--monitor {
-    font-family: 'TT Lakes';
+  &--screen {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -66,38 +96,29 @@ $icon-color: #ff3e79;
     width: 173px;
     border-radius: 0;
     background-color: #f8f8f8;
+  }
 
-    &--monitor:hover {
-      box-shadow: none;
-      transform: none;
-      background-color: inherit;
-      @extend %hover-after-shared;
+  &--screen-request {
+    &::after {
+      @extend %icon-share;
+      @extend %scree-icon-share;
+      background-image: url(../img/repair.svg);
     }
 
-    &--monitor::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
-      background-color: $icon-color;
-      background-repeat: no-repeat;
-      background-position: center center;
-      transition: all 0.3s ease-in-out;
-      @extend %hover-after-shared;
+    &:hover {
+      @extend %hover;
     }
   }
 
-  &--monitor-request {
+  &--screen-condition {
     &::after {
-      background-image: url(../img/repair.svg);
+      @extend %icon-share;
+      @extend %scree-icon-share;
+      background-image: url(../img/checkstatus.svg);
     }
-    &--monitor-condition {
-      &::after {
-        background-image: url(../img/checkstatus.svg);
-      }
+
+    &:hover {
+      @extend %hover;
     }
   }
 }

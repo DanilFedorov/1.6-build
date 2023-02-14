@@ -1,4 +1,11 @@
+%tablet {
+  @media (max-width: 767.99px) {
+    display: none;
+  }
+}
+
 .head {
+  grid-area: 'head';
   display: block;
   position: relative;
   width: 100%;
@@ -7,6 +14,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    height: 88px;
     padding: 24px 16px 0 16px;
 
     @media (min-width: 768px) {
@@ -29,18 +37,6 @@
         display: none;
       }
     }
-    &--divider {
-      &::before {
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: -22px;
-        width: 2px;
-        height: 32px;
-        background-color: #eaeaea;
-        border-radius: 1px;
-      }
-    }
   }
 
   &__logo {
@@ -51,17 +47,8 @@
       margin-left: 42px;
     }
 
-    &--divider {
-      &::before {
-        content: '';
-        position: absolute;
-        top: 13px;
-        left: -20px;
-        width: 2px;
-        height: 32px;
-        background-color: #eaeaea;
-        border-radius: 1px;
-      }
+    &--tablet {
+      @extend %tablet;
     }
   }
 
@@ -94,6 +81,10 @@
 
     @media (min-width: 768px) {
       flex-grow: 1;
+    }
+
+    &--tablet {
+      @extend %tablet;
     }
   }
 }

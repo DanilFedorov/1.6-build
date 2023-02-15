@@ -6,43 +6,7 @@
 @import './btn-list';
 @import './service-btn';
 @import './menu';
-
-.site-nav__list {
-  list-style: none;
-}
-
-.site-nav__list-item {
-  margin-bottom: 32px;
-}
-
-.site-nav__link {
-  font-size: 16px;
-  line-height: 24px;
-  transition: all 0.3s ease-in-out;
-  color: #1b1c21;
-  text-decoration: none;
-}
-
-.site-nav__link:hover {
-  font-size: 17px;
-  color: #7e7e82;
-}
-
-.site-nav__link--active {
-  position: relative;
-  color: #7e7e82;
-}
-
-.site-nav__link--active::before {
-  content: '';
-  position: absolute;
-  left: -24px;
-  top: -6px;
-  width: 4px;
-  height: 32px;
-  border-radius: 0 12px 12px 0;
-  background: #41f6d7;
-}
+@import './site-nav';
 
 .email {
   display: block;

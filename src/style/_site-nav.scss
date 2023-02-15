@@ -1,0 +1,38 @@
+.site-nav {
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    transition: all 0.3s ease-in-out;
+    color: #1b1c21;
+    text-decoration: none;
+
+    &:hover {
+      font-size: 17px;
+      color: #7e7e82;
+    }
+
+    &--active {
+      position: relative;
+      color: #7e7e82;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: -6px;
+        width: 4px;
+        height: 32px;
+        border-radius: 0 12px 12px 0;
+        background: #41f6d7;
+      }
+    }
+  }
+}

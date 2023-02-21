@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     height: 88px;
-    padding: 24px 16px 0 16px;
+    padding: 0 16px;
 
     @media (min-width: 768px) {
       padding-left: 24px;
@@ -28,10 +28,12 @@
     }
 
     &--nav {
+      position: sticky;
       background-color: #fff;
       border-bottom: 1px solid #d9fff5;
       height: 88px;
-      padding-top: 0;
+      top: 0;
+      z-index: 1;
 
       @media (min-width: 1200px) {
         display: none;
@@ -57,7 +59,7 @@
   }
 
   &__page-nav {
-    padding: 24px 16px 0 16px;
+    padding: 0 16px;
 
     @media (min-width: 768px) and (max-width: 1199.99px) {
       padding-top: 32px;

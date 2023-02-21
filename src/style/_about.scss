@@ -1,0 +1,9 @@
+.about {
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+}

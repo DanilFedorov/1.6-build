@@ -1,0 +1,30 @@
+.text-btn {
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  width: 132px;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-weight: 600;
+  text-align: start;
+
+  &::before {
+    position: absolute;
+    left: -8px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/button-icon.png);
+    background-size: contain;
+  }
+
+  .text-btn--open {
+    &::before {
+      transform: rotate(-180deg);
+    }
+  }
+}

@@ -1,9 +1,10 @@
 .about {
-  &__text {
-    margin-bottom: 16px;
-  }
-
   @media (min-width: 768px) {
     width: 45%;
+  }
+
+  &__text {
+    height: 260px;
+    transition: all ease-in 0.3s;
   }
 }

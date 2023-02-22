@@ -146,120 +146,274 @@
     </header>
     <main class="main">
       <section class="main__about about">
-        <div class="about__text">
-          <p class="text"
+        <div class="about__text text text--hide">
+          <p class="text__item"
             >Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.</p
           >
-          <p class="text text--tablet"
+          <p class="text__item"
             >Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера
-            <span class="text--screen"
-              >, что подтверждает большое количество постоянных клиентов.<br />Мы
-              гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.
-            </span>
+            партнера, что подтверждает большое количество постоянных клиентов.
+          </p>
+          <p class="text__item">
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
           </p>
         </div>
-        <button class="main-btn"
-          ><span class="main-btn__icon"></span>Читать далее</button
-        >
+        <div class="main__btn-container">
+          <button class="main__text-btn text-btn"
+            ><span class="text-btn__icon"></span>Читать далее</button
+          >
+        </div>
         <img
           src="img/content.jpg"
           alt="Сервисный центр CPS"
-          class="content-img"
+          class="main__img"
         />
       </section>
       <section class="main__services services">
         <h2 class="main__section-title section-title"
           >Ремонт техники различных брендов</h2
         >
-        <div class="services__brands brands swiper" id="swiper">
-          <ul class="swiper-wrapper brands__list">
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/lenovo.png" alt="Lenovo" class="brands__img" />
-                <span class="brands__button"></span>
+        <div class="services__repair repair swiper" id="swiper">
+          <ul class="swiper-wrapper repair__list">
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/lenovo.png" alt="Lenovo" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
                 <img
                   src="./img/samsung.png"
                   alt="Samsung"
-                  class="brands__img"
+                  class="repair__img"
                 />
-                <span class="brands__button"></span>
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/apple.png" alt="Apple" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/apple.png" alt="Apple" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
                 <img
                   src="./img/viewsonic.png"
                   alt="ViewSonic"
-                  class="brands__img"
+                  class="repair__img"
                 />
-                <span class="brands__button"></span>
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/bosch.png" alt="Bosch" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/bosch.png" alt="Bosch" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/hp.png" alt="HP" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/hp.png" alt="HP" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/acer.png" alt="acer" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/acer.png" alt="acer" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/sony.png" alt="Sony" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/sony.png" alt="Sony" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/lenovo.png" alt="Lenovo" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/lenovo.png" alt="Lenovo" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
                 <img
                   src="./img/samsung.png"
                   alt="Samsung"
-                  class="brands__img"
+                  class="repair__img"
                 />
-                <span class="brands__button"></span>
+                <span class="repair__button"></span>
               </a>
             </li>
-            <li class="swiper-slide brands__item">
-              <a href="" class="brands__link">
-                <img src="./img/apple.png" alt="Apple" class="brands__img" />
-                <span class="brands__button"></span>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/apple.png" alt="Apple" class="repair__img" />
+                <span class="repair__button"></span>
               </a>
             </li>
           </ul>
           <div class="swiper-pagination"></div>
-          <button class="brands__main-btn main-btn" id="brands--expand"
+          <button class="repair__text-btn text-btn" id="text-btn--expand"
             >Показать все</button
           >
+        </div>
+      </section>
+      <section class="main__services services">
+        <h2 class="main__section-title section-title"
+          >Ремонт различных видов техники</h2
+        >
+        <div class="services__repair repair repair--type swiper" id="swiper">
+          <ul class="swiper-wrapper repair__list">
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item repair__item--type">
+              <a href="" class="repair__link">
+                <p class="repair__headline">Ремонт ноутбуков</p>
+                <span class="repair__button"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button class="repair__text-btn text-btn" id="text-btn--expand"
+            >Показать все</button
+          >
+        </div>
+      </section>
+      <section class="main__services services">
+        <h2 class="main__section-title section-title">Цены на услуги</h2>
+        <div class="services__repair repair swiper" id="swiper">
+          <ul class="swiper-wrapper repair__list">
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/lenovo.png" alt="Lenovo" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img
+                  src="./img/samsung.png"
+                  alt="Samsung"
+                  class="repair__img"
+                />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/apple.png" alt="Apple" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img
+                  src="./img/viewsonic.png"
+                  alt="ViewSonic"
+                  class="repair__img"
+                />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/bosch.png" alt="Bosch" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/hp.png" alt="HP" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/acer.png" alt="acer" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/sony.png" alt="Sony" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/lenovo.png" alt="Lenovo" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img
+                  src="./img/samsung.png"
+                  alt="Samsung"
+                  class="repair__img"
+                />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+            <li class="swiper-slide repair__item">
+              <a href="" class="repair__link">
+                <img src="./img/apple.png" alt="Apple" class="repair__img" />
+                <span class="repair__button"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>

@@ -1,28 +1,23 @@
 .text {
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  color: #1b1c21;
+  &__item {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    margin-bottom: 16px;
 
-  @media (min-width: 768px) {
-    line-height: 20px;
-  }
-
-  &:first-of-type {
     @media (min-width: 768px) {
-      margin-bottom: 20px;
+      line-height: 20px;
+    }
+
+    &:first-of-type {
+      @media (min-width: 768px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
-  .text--tablet {
-    @media (max-width: 767.99px) {
-      display: none;
-    }
-  }
-
-  .text--screen {
-    @media (max-width: 1199.98px) {
-      display: none;
-    }
+  &--hide {
+    height: 100px;
   }
 }

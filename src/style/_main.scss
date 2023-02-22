@@ -5,13 +5,19 @@
   z-index: 0;
 
   &__services {
-    margin-top: 40px;
+    margin-top: 24px;
+  }
+
+  &__btn-container {
+    height: auto;
+    width: 100%;
+    background-color: #f8f8f8;
   }
 
   &__img {
     position: relative;
     left: -16px;
-    width: 104%;
+    width: 110%;
     height: auto;
 
     @media (min-width: 768px) {

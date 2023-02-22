@@ -20,9 +20,11 @@
     height: 24px;
     background-image: url(../img/button-icon.png);
     background-size: contain;
+    transform: none;
+    transition: all ease-in 0.3s;
   }
 
-  .text-btn--open {
+  &--rotate {
     &::before {
       transform: rotate(-180deg);
     }

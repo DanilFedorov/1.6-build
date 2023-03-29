@@ -5,7 +5,6 @@
 }
 
 .head {
-  grid-area: 'head';
   display: block;
   position: relative;
   width: 100%;
@@ -14,7 +13,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 88px;
     padding: 0 16px;
 
     @media (min-width: 768px) {
@@ -26,40 +24,16 @@
       padding: 42px 32px 0 32px;
       justify-content: space-between;
     }
-
-    &--nav {
-      position: sticky;
-      background-color: #fff;
-      border-bottom: 1px solid #d9fff5;
-      height: 88px;
-      top: 0;
-      z-index: 1;
-
-      @media (min-width: 1200px) {
-        display: none;
-      }
-    }
-  }
-
-  &__logo {
-    position: relative;
-    margin-left: 16px;
-
-    @media (min-width: 768px) {
-      margin-left: 42px;
-    }
-
-    &--tablet {
-      @extend %tablet;
-    }
   }
 
   &__title {
+    margin: 0;
+    padding-top: 24px;
     position: relative;
   }
 
   &__page-nav {
-    padding: 0 16px;
+    padding: 24px 16px 0 16px;
 
     @media (min-width: 768px) and (max-width: 1199.99px) {
       padding-top: 32px;
@@ -77,12 +51,7 @@
     justify-content: flex-end;
 
     @media (min-width: 768px) {
-      flex-grow: 0;
       margin-left: 42px;
-    }
-
-    @media (min-width: 768px) {
-      flex-grow: 1;
     }
 
     &--tablet {

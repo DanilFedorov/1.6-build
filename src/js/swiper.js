@@ -3,13 +3,13 @@ import Swiper, { Pagination } from 'swiper'
 let init = false
 
 function swiperCard() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth < 768) {
     if (!init) {
       init = true
       let swiper = new Swiper('.swiper', {
         modules: [Pagination],
         spaceBetween: 16,
-        width: 240,
+        width: 260,
         loop: true,
         pagination: {
           el: '.swiper-pagination',

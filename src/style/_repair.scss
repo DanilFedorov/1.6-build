@@ -27,6 +27,10 @@
     }
   }
 
+  &__card-list {
+    padding: 16px 0 0 16px;
+  }
+
   &__text-btn {
     display: none;
 
@@ -51,6 +55,10 @@
     &--type {
       height: 160px;
     }
+
+    &--price {
+      height: 200px;
+    }
   }
 
   &__headline {
@@ -67,6 +75,10 @@
     height: 100%;
     width: 100%;
     padding: 16px;
+
+    &--price {
+      display: block;
+    }
   }
 
   &__button {
@@ -87,5 +99,9 @@
 
   &--type {
     height: 228px;
+  }
+
+  &--price {
+    height: 268px;
   }
 }

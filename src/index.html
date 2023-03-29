@@ -76,32 +76,32 @@
         </li>
       </ul>
     </aside>
+    <div class="head-menu">
+      <button class="service-btn service-btn--menu"></button>
+      <a href="#" class="head-menu__logo logo">
+        <img src="img/logo.png" alt="CPS" />
+      </a>
+      <ul class="head-menu__btn-list btn-list btn-list--tablet">
+        <li class="btn-list__item">
+          <button class="service-btn service-btn--call"></button>
+        </li>
+        <li class="btn-list__item">
+          <button class="service-btn service-btn--chat"></button>
+        </li>
+        <li class="btn-list__item">
+          <button class="service-btn service-btn--profile"></button>
+        </li>
+      </ul>
+      <ul class="head-menu__btn-list btn-list">
+        <li class="btn-list__item">
+          <button class="service-btn service-btn--request"></button>
+        </li>
+        <li class="btn-list__item">
+          <button class="service-btn service-btn--condition"></button>
+        </li>
+      </ul>
+    </div>
     <header class="head">
-      <div class="head__row head__row--nav">
-        <button class="service-btn service-btn--menu"></button>
-        <a href="#" class="head__logo logo">
-          <img src="img/logo.png" alt="CPS" />
-        </a>
-        <ul class="head__btn-list btn-list btn-list--tablet">
-          <li class="btn-list__item">
-            <button class="service-btn service-btn--call"></button>
-          </li>
-          <li class="btn-list__item">
-            <button class="service-btn service-btn--chat"></button>
-          </li>
-          <li class="btn-list__item">
-            <button class="service-btn service-btn--profile"></button>
-          </li>
-        </ul>
-        <ul class="head__btn-list btn-list">
-          <li class="btn-list__item">
-            <button class="service-btn service-btn--request"></button>
-          </li>
-          <li class="btn-list__item">
-            <button class="service-btn service-btn--condition"></button>
-          </li>
-        </ul>
-      </div>
       <div class="head__row">
         <h1 class="head__title title">Услуги и сервисы</h1>
         <ul class="head__btn-list btn-list btn-list--screen">
@@ -161,15 +161,15 @@
             очередь, советуют нас родным и близким.
           </p>
         </div>
-        <div class="main__btn-container">
-          <button class="main__text-btn text-btn"
+        <div class="about__btn-container">
+          <button class="about__text-btn text-btn"
             ><span class="text-btn__icon"></span>Читать далее</button
           >
         </div>
         <img
           src="img/content.jpg"
           alt="Сервисный центр CPS"
-          class="main__img"
+          class="about__img"
         />
       </section>
       <section class="main__services services">
@@ -332,90 +332,141 @@
       </section>
       <section class="main__services services">
         <h2 class="main__section-title section-title">Цены на услуги</h2>
-        <div class="services__repair repair swiper" id="swiper">
+        <div class="services__repair repair repair--price swiper" id="swiper">
           <ul class="swiper-wrapper repair__list">
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/lenovo.png" alt="Lenovo" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
+            <li class="swiper-slide repair__item repair__item--price">
+              <ul class="repair__card-list card-list">
+                <li class="card-list__item">
+                  <p class="card-list__title">Ремонтные услуги</p>
+                  <p class="card-list__description"
+                    >Тестирование с выдачей технического заключения</p
+                  >
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Цена</p>
+                  <p class="card-list__description">Бесплатно</p>
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Срок</p>
+                  <p class="card-list__description">30-120 мин</p>
+                </li>
+                <li class="card-list__item">
+                  <button class="card-list__btn">
+                    <span class="card-list__btn-text">Заказать</span>
+                  </button>
+                </li>
+              </ul>
             </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img
-                  src="./img/samsung.png"
-                  alt="Samsung"
-                  class="repair__img"
-                />
-                <span class="repair__button"></span>
-              </a>
+            <li class="swiper-slide repair__item repair__item--price">
+              <ul class="repair__card-list card-list">
+                <li class="card-list__item">
+                  <p class="card-list__title">Ремонтные услуги</p>
+                  <p class="card-list__description"
+                    >Тестирование с выдачей технического заключения</p
+                  >
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Цена</p>
+                  <p class="card-list__description">Бесплатно</p>
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Срок</p>
+                  <p class="card-list__description">30-120 мин</p>
+                </li>
+                <li class="card-list__item">
+                  <button class="card-list__btn">
+                    <span class="card-list__btn-text">Заказать</span>
+                  </button>
+                </li>
+              </ul>
             </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/apple.png" alt="Apple" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
+            <li class="swiper-slide repair__item repair__item--price">
+              <ul class="repair__card-list card-list">
+                <li class="card-list__item">
+                  <p class="card-list__title">Ремонтные услуги</p>
+                  <p class="card-list__description"
+                    >Тестирование с выдачей технического заключения</p
+                  >
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Цена</p>
+                  <p class="card-list__description">Бесплатно</p>
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Срок</p>
+                  <p class="card-list__description">30-120 мин</p>
+                </li>
+                <li class="card-list__item">
+                  <button class="card-list__btn">
+                    <span class="card-list__btn-text">Заказать</span>
+                  </button>
+                </li>
+              </ul>
             </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img
-                  src="./img/viewsonic.png"
-                  alt="ViewSonic"
-                  class="repair__img"
-                />
-                <span class="repair__button"></span>
-              </a>
+            <li class="swiper-slide repair__item repair__item--price">
+              <ul class="repair__card-list card-list">
+                <li class="card-list__item">
+                  <p class="card-list__title">Ремонтные услуги</p>
+                  <p class="card-list__description"
+                    >Тестирование с выдачей технического заключения</p
+                  >
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Цена</p>
+                  <p class="card-list__description">Бесплатно</p>
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Срок</p>
+                  <p class="card-list__description">30-120 мин</p>
+                </li>
+                <li class="card-list__item">
+                  <button class="card-list__btn">
+                    <span class="card-list__btn-text">Заказать</span>
+                  </button>
+                </li>
+              </ul>
             </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/bosch.png" alt="Bosch" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
-            </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/hp.png" alt="HP" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
-            </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/acer.png" alt="acer" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
-            </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/sony.png" alt="Sony" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
-            </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/lenovo.png" alt="Lenovo" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
-            </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img
-                  src="./img/samsung.png"
-                  alt="Samsung"
-                  class="repair__img"
-                />
-                <span class="repair__button"></span>
-              </a>
-            </li>
-            <li class="swiper-slide repair__item">
-              <a href="" class="repair__link">
-                <img src="./img/apple.png" alt="Apple" class="repair__img" />
-                <span class="repair__button"></span>
-              </a>
+            <li class="swiper-slide repair__item repair__item--price">
+              <ul class="repair__card-list card-list">
+                <li class="card-list__item">
+                  <p class="card-list__title">Ремонтные услуги</p>
+                  <p class="card-list__description"
+                    >Тестирование с выдачей технического заключения</p
+                  >
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Цена</p>
+                  <p class="card-list__description">Бесплатно</p>
+                </li>
+                <li class="card-list__item">
+                  <p class="card-list__title">Срок</p>
+                  <p class="card-list__description">30-120 мин</p>
+                </li>
+                <li class="card-list__item">
+                  <button class="card-list__btn">
+                    <span class="card-list__btn-text">Заказать</span>
+                  </button>
+                </li>
+              </ul>
             </li>
           </ul>
           <div class="swiper-pagination"></div>
         </div>
+        <p class="services__description"
+          >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.</p
+        >
+        <a href="" class="services__link">Получить коммерческое предложение</a>
       </section>
     </main>
+    <footer class="footer">
+      <p class="footer__text">© 2019 CPS<br />Разработано командой Apesong</p>
+      <p class="footer__text">Политика конфиденциальности</p>
+      <p class="footer__text"
+        >Информация, размещенная на данной странице, не является публичной
+        офертой</p
+      >
+    </footer>
   </body>
 </html>

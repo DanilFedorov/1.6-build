@@ -6,11 +6,29 @@
   background-color: #f8f8f8;
   padding-top: 16px;
 
+  @media (min-width: 768px) {
+    padding: 32px 24px 0 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   &__text {
     padding-bottom: 16px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     color: #7e7e82;
+
+    @media (min-width: 768px) {
+      &:first-of-type {
+        text-align: left;
+      }
+
+      &:last-of-type {
+        text-align: right;
+        width: 213px;
+      }
+    }
   }
 }

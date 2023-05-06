@@ -1,44 +1,49 @@
+$about-btn-bg: #f8f8f8;
+
 .about {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) and (max-width: 1199.99px) {
-    display: grid;
-    grid-template-areas:
-      'text img'
-      'button img';
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 48px;
-    height: 230px;
+  @media (min-width: 768px) and (max-width: 1365.99px) {
     padding: 32px 25px 0 25px;
   }
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__content {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    @media (min-width: 768px) {
+      padding-right: 35px;
+    }
+  }
+
   &__btn-container {
-    grid-area: button;
     height: auto;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: $about-btn-bg;
+    padding-left: 9px;
+    margin-bottom: 16px;
   }
 
   &__text-btn {
     position: relative;
     padding-left: 23px;
-    margin-bottom: 16px;
   }
 
-  &__text {
-    grid-area: text;
-    height: 260px;
-    transition: all ease-in 0.3s;
-    overflow: hidden;
-  }
-
-  &__img {
+  .about__img {
     position: relative;
+    object-fit: cover;
     left: -16px;
     width: 110%;
     height: auto;
+    flex-grow: 1;
 
     @media (min-width: 768px) {
       border-radius: 6px;

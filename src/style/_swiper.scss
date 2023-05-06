@@ -13,6 +13,10 @@
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  @media (min-width: 768px) {
+    mask: unset;
+  }
 }
 
 .swiper-pagination-bullet {

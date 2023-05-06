@@ -1,11 +1,13 @@
 const aside = document.querySelector('.menu')
 const asideButton = document.querySelector('.service-btn--close')
 const headerButton = document.querySelector('.service-btn--menu')
+const overlay = document.querySelector('.overlay')
 
-asideButton.onclick = function () {
+function toggleMenu() {
   aside.classList.toggle('menu--hide')
+  overlay.classList.toggle('overlay--hide')
 }
 
-headerButton.onclick = function () {
-  aside.classList.toggle('menu--hide')
-}
+asideButton.onclick = toggleMenu
+headerButton.onclick = toggleMenu
+overlay.onclick = toggleMenu

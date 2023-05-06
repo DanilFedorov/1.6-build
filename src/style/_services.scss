@@ -6,6 +6,10 @@
     font-size: 14px;
     line-height: 20px;
     color: #1b1c21;
+
+    @media (min-width: 768px) {
+      width: 421px;
+    }
   }
 
   &__link {
@@ -19,6 +23,10 @@
     line-height: 24px;
     font-weight: 600;
 
+    @media (min-width: 768px) {
+      width: 421px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -30,6 +38,10 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-image: url(../img/dropdown.svg);
+
+      @media (min-width: 768px) {
+        left: 325px;
+      }
     }
   }
 }

@@ -3,7 +3,6 @@
   cursor: pointer;
   background-color: inherit;
   border: none;
-  width: 132px;
   font-family: 'TT Lakes';
   font-size: 16px;
   line-height: 24px;
@@ -21,7 +20,6 @@
     background-image: url(../img/button-icon.png);
     background-size: contain;
     transform: none;
-    transition: all ease-in 0.3s;
   }
 
   &--rotate {

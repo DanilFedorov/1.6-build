@@ -35,12 +35,12 @@
   &__page-nav {
     padding: 24px 16px 0 16px;
 
-    @media (min-width: 768px) and (max-width: 1199.99px) {
+    @media (min-width: 768px) and (max-width: 1439.99px) {
       padding-top: 32px;
       padding-left: 24px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       padding-top: 8px;
       padding-left: 32px;
     }

@@ -17,7 +17,13 @@
     }
   }
 
-  &--hide {
-    height: 100px;
+  &__container {
+    position: relative;
+    height: 165px;
+
+    &--hidden {
+      height: 0;
+      overflow: hidden;
+    }
   }
 }

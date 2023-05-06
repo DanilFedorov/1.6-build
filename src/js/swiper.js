@@ -1,12 +1,14 @@
-import Swiper, { Pagination } from 'swiper'
+import Swiper from 'swiper'
+import { Pagination } from 'swiper'
 
 let init = false
+let swiper
 
 function swiperCard() {
   if (window.innerWidth < 768) {
     if (!init) {
       init = true
-      let swiper = new Swiper('.swiper', {
+      swiper = new Swiper('.swiper', {
         modules: [Pagination],
         spaceBetween: 16,
         width: 260,
@@ -18,11 +20,15 @@ function swiperCard() {
       })
     }
   } else {
-    swiper.destroy()
+    if (swiper) {
+      swiper.destroy()
+      swiper = null
+    }
     init = false
   }
 }
+
 swiperCard()
 window.addEventListener('resize', swiperCard)
 
-export default '*'
+export default swiperCard

@@ -1,6 +1,6 @@
-const repair = document.querySelector('.repair')
-const repairList = document.querySelector('.repair__list')
-const repairButton = document.querySelector('.repair__text-btn')
+const repair = document.querySelector('.repair--type')
+const repairList = document.querySelector('.repair__list--type')
+const repairButton = document.querySelector('.repair__text-btn--type')
 
 let textButton = 'Показать все'
 

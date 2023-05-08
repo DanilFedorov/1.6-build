@@ -22,8 +22,10 @@
   }
 
   &--tablet {
-    @media (min-width: 768px) {
-      display: none;
+    display: none;
+
+    @media (min-width: 767.99px) {
+      display: flex;
     }
 
     @media (min-width: 1366px) {

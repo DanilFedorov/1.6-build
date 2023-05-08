@@ -19,7 +19,6 @@ $icon-color: #ff3e79;
 
 %hover {
   box-shadow: none;
-  background-color: inherit;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
@@ -71,7 +70,7 @@ $icon-color: #ff3e79;
     background-image: url(../img/call.svg);
   }
 
-  &--chat {
+  &--feedback {
     background-image: url(../img/chat.svg);
   }
 
@@ -85,6 +84,12 @@ $icon-color: #ff3e79;
 
   &--close {
     background-image: url(../img/close.svg);
+  }
+
+  &--disabled {
+    @media (min-width: 1363px) {
+      display: none;
+    }
   }
 
   &--screen {
@@ -104,10 +109,6 @@ $icon-color: #ff3e79;
       @extend %scree-icon-share;
       background-image: url(../img/repair.svg);
     }
-
-    &:hover {
-      @extend %hover;
-    }
   }
 
   &--screen-condition {
@@ -116,9 +117,9 @@ $icon-color: #ff3e79;
       @extend %scree-icon-share;
       background-image: url(../img/checkstatus.svg);
     }
+  }
 
-    &:hover {
-      @extend %hover;
-    }
+  &:hover {
+    @extend %hover;
   }
 }

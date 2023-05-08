@@ -12,10 +12,15 @@
   background-color: #ffffff;
   transition: left ease-in 0.3s;
 
+  @media (max-width: 360px) {
+    width: 100%;
+  }
+
   @media (min-width: 1440px) {
     position: sticky;
     height: 100vh;
     box-shadow: none;
+    z-index: 1;
   }
 
   &__row {
@@ -61,7 +66,7 @@
   }
 
   &--hide {
-    left: -320px;
+    left: -360px;
 
     @media (min-width: 1440px) {
       left: 0;

@@ -9,7 +9,7 @@
   <body class="body-flex">
     <aside class="menu menu--hide">
       <div class="menu__row">
-        <button class="service-btn service-btn--close"></button>
+        <button class="service-btn service-btn--close service-btn--disabled" id="menuCloseButton"></button>
         <a href="#" class="menu__logo logo">
           <img src="img/logo.png" alt="CPS" />
         </a>
@@ -52,7 +52,7 @@
           <button class="service-btn service-btn--call"></button>
         </li>
         <li class="btn-list__item">
-          <button class="service-btn service-btn--chat"></button>
+          <button class="service-btn service-btn--feedback"></button>
         </li>
         <li class="btn-list__item">
           <button class="service-btn service-btn--profile"></button>
@@ -76,7 +76,61 @@
         </li>
       </ul>
     </aside>
+    <div class="overlay overlay--hide" id="menuOverlay"></div>
+    <div class="overlay overlay--hide" id="feedbackOverlay"></div>
+    <div class="overlay overlay--hide" id="callOverlay"></div>
     <div class="overlay overlay--hide"></div>
+    <div class="modal modal--feedback modal--hide">
+      <button class="modal__service-button service-btn service-btn--close" id="feedbackCloseButton"></button>
+      <form class="modal__form form" id="modalFeedback">
+        <h3 class="form__title title">Обратная связь</h3>
+        <ul class="form__list">
+          <li class="form__item">
+            <label for="feedbackName" class="form__label">Ваше имя</label>
+            <input class="form__input" name="feedbackName" id="feedbackName"  type="text" placeholder="Имя" aria-label="Ваше имя" required>
+          </li>
+          <li class="form__item">
+            <label for="feedbackPhone" class="form__label">Ваш номер телефона</label>
+            <input class="form__input" name="feedbackPhone" id="feedbackPhone"  type="tel" placeholder="Телефон" aria-label="Ваш номер телефона" required>
+          </li>
+          <li class="form__item">
+            <label for="feedbackEmail" class="form__label">Ваша электронная почта</label>
+            <input class="form__input" name="feedbackEmail" id="feedbackEmail"  type="email" placeholder="Электронная почта" aria-label="Ваша электронная почта" required>
+          </li>
+          <li class="form__item">
+            <label for="feedbackMessage" class="form__label">Ваше сообщение</label>
+            <textarea class="form__input form__input--text" name="feedbackMessage" id="feedbackMessage"  rows="5" placeholder="Сообщение" aria-label="Ваша электронная почта" required></li>
+          <li class="form__item">
+            <p class="form__text">
+              Нажимая “отправить”, вы даете согласие на <a href="" class="form__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="" class="form__link">политикой конфиденциальности</a>
+            </p>
+          </li>
+          <li class="form__item">
+            <input class="form__order-btn order-btn" type="submit" form="modalFeedback" value="ОТПРАВИТЬ">
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="modal modal--call modal--hide">
+      <button class="modal__service-button service-btn service-btn--close" id="callCloseButton"></button>
+      <form class="modal__form form" id="modalCall">
+        <h3 class="form__title title">Обратная связь</h3>
+        <ul class="form__list">
+          <li class="form__item">
+            <label for="callPhone" class="form__label">Ваш номер телефона</label>
+            <input class="form__input" name="callPhone" id="callPhone"  type="tel" placeholder="Телефон" aria-label="Ваш номер телефона" required>
+          </li>
+          <li class="form__item">
+            <p class="form__text">
+              Нажимая “отправить”, вы даете согласие на <a href="" class="form__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="" class="form__link">политикой конфиденциальности</a>
+            </p>
+          </li>
+          <li class="form__item">
+            <input class="form__order-btn order-btn" type="submit" form="modalCall" value="ОТПРАВИТЬ">
+          </li>
+        </ul>
+      </form>
+    </div>
     <div class="flex-container">
       <div class="head-menu">
         <button class="service-btn service-btn--menu"></button>
@@ -88,7 +142,7 @@
             <button class="service-btn service-btn--call"></button>
           </li>
           <li class="btn-list__item">
-            <button class="service-btn service-btn--chat"></button>
+            <button class="service-btn service-btn--feedback"></button>
           </li>
           <li class="btn-list__item">
             <button class="service-btn service-btn--profile"></button>
@@ -149,7 +203,7 @@
       <main class="main">
         <section class="main__about about">
           <div class="about__content">
-            <div class="about__text text text--hide">
+            <div class="about__text text">
               <p class="text__item"
                 >Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
@@ -361,9 +415,7 @@
                     <p class="card-list__description">30-120 мин</p>
                   </li>
                   <li class="card-list__item">
-                    <button class="card-list__order-btn order-btn">
-                      <span class="order-btn__text">Заказать</span>
-                    </button>
+                    <button class="card-list__order-btn order-btn">Заказать</button>
                   </li>
                 </ul>
               </li>
@@ -384,9 +436,7 @@
                     <p class="card-list__description">30-120 мин</p>
                   </li>
                   <li class="card-list__item">
-                    <button class="card-list__order-btn order-btn">
-                      <span class="order-btn__text">Заказать</span>
-                    </button>
+                    <button class="card-list__order-btn order-btn">Заказать</button>
                   </li>
                 </ul>
               </li>
@@ -407,9 +457,7 @@
                     <p class="card-list__description">30-120 мин</p>
                   </li>
                   <li class="card-list__item">
-                    <button class="card-list__order-btn order-btn">
-                      <span class="order-btn__text">Заказать</span>
-                    </button>
+                    <button class="card-list__order-btn order-btn">Заказать</button>
                   </li>
                 </ul>
               </li>
@@ -430,9 +478,7 @@
                     <p class="card-list__description">30-120 мин</p>
                   </li>
                   <li class="card-list__item">
-                    <button class="card-list__order-btn order-btn">
-                      <span class="order-btn__text">Заказать</span>
-                    </button>
+                    <button class="card-list__order-btn order-btn">Заказать</button>
                   </li>
                 </ul>
               </li>
@@ -453,9 +499,7 @@
                     <p class="card-list__description">30-120 мин</p>
                   </li>
                   <li class="card-list__item">
-                    <button class="card-list__order-btn order-btn">
-                      <span class="order-btn__text">Заказать</span>
-                    </button>
+                    <button class="card-list__order-btn order-btn">Заказать</button>
                   </li>
                 </ul>
               </li>

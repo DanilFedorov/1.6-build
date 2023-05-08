@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 440px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 3;
+  padding: 24px 16px 0 16px;
+  transition: right ease-in 0.3s;
+
+  @media (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__form {
+    margin-top: 40px;
+  }
+
+  &--hide {
+    right: -440px;
+
+    @media (min-width: 768px) {
+      right: -440px;
+    }
+  }
+}

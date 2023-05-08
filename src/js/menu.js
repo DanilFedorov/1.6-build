@@ -1,7 +1,7 @@
 const aside = document.querySelector('.menu')
-const asideButton = document.querySelector('.service-btn--close')
+const asideButton = document.getElementById('menuCloseButton')
 const headerButton = document.querySelector('.service-btn--menu')
-const overlay = document.querySelector('.overlay')
+const overlay = document.getElementById('menuOverlay')
 
 function toggleMenu() {
   aside.classList.toggle('menu--hide')

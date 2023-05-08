@@ -4,29 +4,24 @@
   border-radius: 16px;
   border: none;
   background-color: #ff3e79;
+  padding-left: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
 
-  &__text {
-    position: relative;
-    display: block;
-    padding-left: 12px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    text-align: left;
-    color: #fff;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 7px;
-      right: 18px;
-      width: 11px;
-      height: 11px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(../img/dropdown-white.svg);
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 18px;
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/dropdown-white.svg);
   }
 }

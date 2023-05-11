@@ -1,10 +1,12 @@
+$modal-background-color: #fff;
+
 .modal {
   position: fixed;
   top: 0;
   right: 0;
   max-width: 440px;
   height: 100%;
-  background-color: #fff;
+  background-color: $modal-background-color;
   z-index: 3;
   padding: 24px 16px 0 16px;
   transition: right ease-in 0.3s;

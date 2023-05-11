@@ -1,11 +1,14 @@
+$head-background-color: #fff;
+$head-border-color: #d9fff5;
+
 .head-menu {
   position: sticky;
   display: flex;
   align-items: center;
   height: 88px;
   padding: 0 16px;
-  background-color: #fff;
-  border-bottom: 1px solid #d9fff5;
+  background-color: $head-background-color;
+  border-bottom: 1px solid $head-border-color;
   top: 0;
   z-index: 1;
 

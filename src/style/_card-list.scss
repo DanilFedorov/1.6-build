@@ -1,3 +1,5 @@
+$title-font-color: #7e7e82;
+
 .card-list {
   position: relative;
   width: 100%;
@@ -22,7 +24,7 @@
   }
 
   &__title {
-    color: #7e7e82;
+    color: $title-font-color;
     font-size: 14px;
     line-height: 16px;
     opacity: 0.72;

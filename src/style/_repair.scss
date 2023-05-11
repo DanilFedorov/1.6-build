@@ -1,6 +1,4 @@
 .repair {
-  height: 100%;
-
   &__list {
     width: 100%;
     list-style: none;
@@ -24,7 +22,6 @@
       @media (min-width: 768px) {
         flex-direction: column;
         row-gap: 0;
-        background-color: #fff;
         margin: 24px;
         border-radius: 6px;
         width: auto;
@@ -144,6 +141,22 @@
     }
   }
 
+  &--brand {
+    height: 140px;
+
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
+
+  &--type {
+    height: 230px;
+
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
+
   &--price {
     height: 268px;
 
@@ -153,8 +166,6 @@
   }
 
   &--hidden {
-    height: 140px;
-
     @media (min-width: 768px) {
       height: 260px;
     }
@@ -162,9 +173,5 @@
     @media (min-width: 768px) {
       height: 275px;
     }
-  }
-
-  &--type {
-    height: 230px;
   }
 }

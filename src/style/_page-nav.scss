@@ -1,3 +1,7 @@
+$link-font-color: #7e7e82;
+$link-active-background-color: #fff;
+$link-active-border-color: #b8ffec;
+
 .page-nav {
   &__list {
     display: flex;
@@ -17,7 +21,7 @@
 
   &__link {
     display: block;
-    color: #7e7e82;
+    color: $link-font-color;
     font-size: 16px;
     line-height: 24px;
     padding: 6px 16px;
@@ -25,8 +29,8 @@
     white-space: nowrap;
 
     &--active {
-      background-color: #fff;
-      border: 2px solid #b8ffec;
+      background-color: $link-active-background-color;
+      border: 2px solid $link-active-border-color;
       border-radius: 6px;
     }
   }

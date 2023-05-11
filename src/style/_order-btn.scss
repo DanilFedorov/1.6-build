@@ -1,9 +1,12 @@
+$order-btn-background-color: #ff3e79;
+$order-btn-font-color: #fff;
+
 .order-btn {
   width: 119px;
   height: 32px;
   border-radius: 16px;
   border: none;
-  background-color: #ff3e79;
+  background-color: $order-btn-background-color;
   padding-left: 12px;
   font-size: 12px;
   font-weight: 600;
@@ -11,7 +14,7 @@
   letter-spacing: -0.15px;
   text-transform: uppercase;
   text-align: left;
-  color: #fff;
+  color: $order-btn-font-color;
 
   &::after {
     content: '';

@@ -1,9 +1,13 @@
 $email-font-color: #1b1c21;
 
 .email {
-  display: block;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
   color: $email-font-color;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
 }

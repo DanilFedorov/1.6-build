@@ -18,7 +18,7 @@ $menu-background-color: #fff;
     width: 100%;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1363px) {
     position: sticky;
     height: 100vh;
     box-shadow: none;
@@ -70,7 +70,7 @@ $menu-background-color: #fff;
   &--hide {
     left: -360px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1363px) {
       left: 0;
     }
   }

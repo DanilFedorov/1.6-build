@@ -5,13 +5,14 @@ $link-active-border-color: #b8ffec;
 .page-nav {
   &__list {
     display: flex;
-    overflow-y: hidden;
+    overflow: scroll;
     list-style: none;
     margin: 0;
     padding: 0;
 
-    @media (min-width: 1200px) {
-      overflow-x: auto;
+    @media (min-width: 1363px) {
+      overflow: auto;
+      flex-wrap: wrap;
     }
 
     &::-webkit-scrollbar {
